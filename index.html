@@ -173,10 +173,11 @@
   <div class="divider"></div>
   <div class="rules">
     → Tekan lingkaran sebelum <span>menghilang</span><br>
-    → Setiap tekan = <span>+10 poin</span><br>
+    → Setiap tekan = <span>+1 poin</span><br>
     → Lewat tanpa tekan = <span>−1 nyawa</span><br>
     → Kamu punya <span>3 nyawa</span><br>
-    → Capai <span>1000 poin</span> untuk menang
+    → Capai <span>Skor tertinggi!</span>
+    <!-- → Capai <span>1000 poin</span> untuk menang -->
   </div>
   <button class="btn" id="startBtn">Mulai Bermain</button>
   <button class="btn secondary" id="devLoginBtn">Developer Panel</button>
@@ -206,10 +207,10 @@
       <div class="hud-label">Skor</div>
       <div class="hud-value" id="scoreDisplay">0</div>
     </div>
-    <div class="hud-block">
+    <!-- <div class="hud-block">
       <div class="hud-label">Target</div>
       <div class="hud-value">1000</div>
-    </div>
+    </div> -->
     <div class="hud-block">
       <div class="hud-label">Nyawa</div>
       <div class="lives" id="livesDisplay">
@@ -219,7 +220,7 @@
       </div>
     </div>
   </div>
-  <div class="goal-bar-wrap"><div class="goal-bar-fill" id="goalBar" style="width:0%"></div></div>
+  <!-- <div class="goal-bar-wrap"><div class="goal-bar-fill" id="goalBar" style="width:0%"></div></div> -->
   <div id="arena"></div>
 </div>
 
@@ -337,9 +338,9 @@
   let currentPlayer = '';
 
   const SCORE_WIN    = 1000;
-  const SCORE_STEP   = 10;
-  const CIRCLE_MAX   = 60;
-  const CIRCLE_MIN   = 8;
+  const SCORE_STEP   = 1;
+  const CIRCLE_MAX   = 40;
+  const CIRCLE_MIN   = 4;
   const BASE_SHRINK  =1800;
   const SPAWN_DELAY  = 500;
 
